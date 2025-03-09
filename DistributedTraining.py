@@ -3,12 +3,12 @@ import tensorflow as tf
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from pyprojroot import here
 
-batch_size = 128
-epochs = 500
+batch_size = 64
+epochs = 800
 input_shape = (120, 5, 5, 13)
 horizon = 6
-lr = 0.0005
-early_stop_paitience = 15
+lr = 0.005
+early_stop_paitience = 20
 reduce_lr_paitience = 3
 reduce_lr_factor = 0.6
 
